@@ -41,8 +41,8 @@
 	
   $.fn.sort = function(o) {
     $.sort.options = $.extend({
-      sortSelector: '> *',
-      compareSelector: '',
+			sortSelector: '> *',
+			compareSelector: '',
 			mirrorElement: '',
 			includeNaturalOrder: false,
 			compareFunction: null,
@@ -54,7 +54,7 @@
 		$.sort.getValue = function(e) {
 			var elem = $.sort.options.compareSelector ? $(e).find($.sort.options.compareSelector).eq(0) : $(e), 
 			    text = $.trim(elem.attr('data-sort-value') || elem.text()), 
-					ret = text;
+			    ret = text;
 			
 			if(/^#?(\-?[\.\d]+)$/.test(text)) ret = Number(RegExp.$1);
 			if(/^\s*$/.test(text)) {
