@@ -1,5 +1,4 @@
 # sort - jQuery plugin
----
 
 Generic sorter for jQuery collections
 
